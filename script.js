@@ -31,9 +31,12 @@ function doPost(e) {
     var rowData = [];
     rowData.push(new Date()); // Добавляем текущую дату и время
     rowData.push(e.parameter.name);
-    rowData.push(e.parameter.email);
-    rowData.push(e.parameter.phone);
+    rowData.push(e.parameter.name2);
     rowData.push(e.parameter.attendance);
+    rowData.push(e.parameter.attendance_children);
+    rowData.push(e.parameter.name_children);
+    rowData.push(e.parameter.alcohol);
+    rowData.push(e.parameter.food);
     rowData.push(e.parameter.message);
     sheet.appendRow(rowData);
     return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
@@ -42,8 +45,9 @@ function doPost(e) {
   function submitForm(event) {
     event.preventDefault(); // Предотвращаем отправку формы по умолчанию
     var formData = new FormData(document.getElementById("guestForm"));
-    fetch('https://script.google.com/macros/s/AKfycbxWhlT4-xKwsURTHFykfgWKv7FU49Pf0PNYUBMn899-3aUBxJNIhm5ObFE1tECByNBK/exec', {
-      method: 'POST',
+    fetch('https://script.google.com/macros/s/AKfycbx3gwTI7RYjUDUfI_qYl4sSQ-qK6p2oZpLMqsn0mwVntI6p_ccbmV6G1mKhH26S5HroLw/exec', { 
+    
+    method: 'POST',
       body: formData
     })
     .then(response => {

@@ -78,30 +78,69 @@
         <h1>Анкета гостя</h1>
         <form id="guestForm" onsubmit="submitForm(event)">
             <div class="form-group">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
+                <label1 for="name">Ваше Имя и Фамилия:</label1>
+                <input type="text" id="name" name="name" required placeholder="Иван Иванов">
             </div>
-            
+
             <div class="form-group">
-                <label for="email">Email:</label>
+                <label1 for="name">Имя и Фамилия вашего спутника/спутницы:</label1>
+                <input type="text" id="name2" name="name2" required placeholder="Ленька Утесов/Марфа Степанна">
+            </div>
+
+            <div class="form-group">                
+                <fieldset>
+                    <legend>Планируете ли присутствовать на свадьбе?</legend>
+                    <label><input type="radio" name="attendance" value="yes">Да, с удовольствием!</label><br>
+                    <label><input type="radio" name="attendance" value="no">К сожалению, не могу.</label><br>
+                </fieldset>
+            </div>
+
+            <div class="form-group">                
+                <fieldset>
+                    <legend>Будут ли с вами дети?</legend>
+                    <label><input type="radio" name="attendance_children" value="yes">Да</label><br>
+                    <label><input type="radio" name="attendance_children" value="no">Нет</label><br>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label1 for="name">Напишите имена детей и сколько им лет:</label1>
+                <input type="text" name = "name_children" id="name_children" required placeholder="Кирилл, 6 лет">
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Какой алкоголь вы предпочитаете?</legend>
+                    <label><input type="checkbox" name="alcohol" value="Красное вино"> Красное вино</label><br>
+                    <label><input type="checkbox" name="alcohol" value="Белое вино"> Белое вино</label><br>
+                    <label><input type="checkbox" name="alcohol" value="Шампанское"> Шампанское</label><br>
+                    <label><input type="checkbox" name="alcohol" value="Водка"> Водка</label><br>
+                    <label><input type="checkbox" name="alcohol" value="Не буду пить алкоголь"> Не буду пить алкоголь</label><br>
+                </fieldset>
+            </div>
+             
+            <div class="form-group">
+                <fieldset>
+                    <legend>Есть ли предпочтения в еде?</legend>
+                    <label><input type="radio" name="food" value="Не ем мясо"> Не ем мясо.</label><br>
+                    <label><input type="radio" name="food" value="Не ем рыбу"> Не ем рыбу.</label><br>
+                    <label><input type="radio" name="food" value="Вегетарианец"> Вегетарианец.</label><br>
+                    
+                </fieldset>
+            </div>
+
+            <!-- <div class="form-group">
+                <label1 for="email">Email:</label1>
                 <input type="email" id="email" name="email" required>
             </div>
             
             <div class="form-group">
-                <label for="phone">Телефон:</label>
+                <label1 for="phone">Телефон:</label1>
                 <input type="tel" id="phone" name="phone" required>
             </div>
-            
+             -->
             <div class="form-group">
-                <label for="attendance">Планируете ли присутствовать?</label>
-                <select id="attendance" name="attendance" required>
-                    <option value="yes">Да</option>
-                    <option value="no">Нет</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Сообщение:</label>
+                <label1 for="message">Сообщение:</label1>
                 <textarea id="message" name="message"></textarea>
             </div>
             
@@ -112,7 +151,7 @@
     </section>
 
 
-    <script>
+    <!-- <script>
         function submitForm(event) {
             event.preventDefault(); // Предотвращаем отправку формы по умолчанию
             var formData = new FormData(document.getElementById("guestForm"));
@@ -132,7 +171,7 @@
                 alert('Произошла ошибка при отправке данных.');
             });
         }
-    </script>
+    </script> -->
 </body>
 
 <section id="map-yandex" class="hidden">

@@ -22,6 +22,142 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Calmius';
+  src: 
+      url('FONT/Calmius-ExtraBold.ttf') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CormorantInfant';
+  src: 
+      url('FONT/CormorantInfant-Light.ttf') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'saint_amour';
+  src: 
+      url('FONT/FontsFree-Net-saint-amour-regular.ttf') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Klukva';
+  src: 
+      url('FONT/Klukva_version_01.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vetrino';
+  src: 
+      url('FONT/Vetrino.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'VINEYARD';
+  src: 
+      url('FONT/VINEYARD.TTF') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Moniqa';
+  src: 
+      url('FONT/Moniqa-BoldNarrowHeading.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlumniSansPinstripe';
+  src: 
+      url('FONT/AlumniSansPinstripe-Regular.ttf') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BIZUDPMincho';
+  src: 
+      url('FONT/BIZUDPMincho-Regular.ttf') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HinaMincho';
+  src: 
+      url('FONT/HinaMincho-Regular.ttf') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EBGaramondSC08';
+  src: 
+      url('FONT/EBGaramondSC08-Regular.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EBG_Italic';
+  src: 
+      url('FONT/EBGaramond08-Italic.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EBG_Regular';
+  src: 
+      url('FONT/EBGaramond08-Regular.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto_Light';
+  src: 
+      url('FONT/NotoSerifTC-Light.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto_Regular';
+  src: 
+      url('FONT/NotoSerifTC-Regular.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto_SemiBold';
+  src: 
+      url('FONT/NotoSerifTC-SemiBold.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noto_Bold';
+  src: 
+      url('FONT/NotoSerifTC-Bold.otf') format('opentype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 body {
@@ -32,10 +168,8 @@ body {
     background-size: cover; /* Масштабирование фонового изображения */
     background-position: center; /* Положение фонового изображения */
     background-attachment: fixed;
-    font-size: 32px;
-    font-family: 'MyCustomFont1', sans-serif;
-    
-
+    font-size: 12px;
+    font-family: 'Noto_SemiBold', sans-serif;
 }
 
 #first {
@@ -56,8 +190,8 @@ body {
 }
 
 #first h2 {
-  font-size: 40px; /* Размер шрифта для <h2> */
-  font-family: 'MyCustomFont2', sans-serif; /* Шрифт для <h2> */
+  font-size: 120px; /* Размер шрифта для <h2> */
+  font-family: 'saint_amour', sans-serif; /* Шрифт для <h2> */
 }
 
 #logo2 {
@@ -135,9 +269,10 @@ body {
 
 #guest-form {
   width: 400px; 
-  height: 750px; 
+  height: 1650px; 
   border: 5px solid #ffffff; 
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: transparent; */
   padding: 20px; 
   border-radius: 10px; 
   margin: 20px auto; /* Отступ вокруг секции */
@@ -147,28 +282,53 @@ body {
 
 #guest-form h1 {
   font-size: 36px; 
-  font-family: 'MyCustomFont2', serif;
+  font-family: 'Noto_Bold', serif;
 }
+
 
 .form-group {
-  margin-bottom: 20px; /* Добавляет отступ снизу между группами форм */
+  margin-bottom: 20px; 
 }
 
-label {
-  display: block; /* Заставляет метки занимать всю ширину, текст будет выровнен влево */
-  margin-bottom: 5px; /* Отступ метки от поля ввода */
+.form-group label1 {
+  display: block;
+  width: 100%;
+  margin: 2px 0px; 
+  /* text-align: left; */
+  text-align: center; 
+  font-size: 24px;
+  font-family: 'Noto_SemiBold', sans-serif;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
 textarea {
+  background-color: transparent; 
   width: 100%; /* Заставляет поля ввода занимать всю ширину контейнера */
   padding: 8px; /* Добавляет немного пространства внутри полей ввода для удобства */
   box-sizing: border-box; /* Убеждается, что padding и border входят в общую ширину, указанную выше */
   border: 1px solid #ccc; /* Устанавливает границу для полей ввода */
   border-radius: 4px; /* Скругляет углы полей ввода */
+  font-size: 12px;
+  font-family: 'Noto_SemiBold', sans-serif;
+}
+fieldset legend {
+  margin-bottom: 30px; 
+  font-size: 24px;
+  font-family: 'Noto_SemiBold', sans-serif;
+
+}
+
+fieldset label {
+  display: block;
+  width: 100%;
+  margin: 2px 0px; 
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Noto_light', sans-serif;
 }
 
 button[type="submit"] {
@@ -188,7 +348,8 @@ button[type="submit"]:hover {
   width: 400px; 
   height: 600px; 
   border: 5px solid #ffffff; 
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: transparent; */
   padding: 20px; 
   border-radius: 10px; 
   margin: 20px auto; 
@@ -199,8 +360,8 @@ button[type="submit"]:hover {
   width: 100%; /* Занимает всю доступную ширину */
   text-align: center; /* Если нужно выровнять текст по центру */
   margin-bottom: 20px; /* Добавляет отступ снизу для разделения от изображений */
-  font-size: 64px; /* Размер шрифта для <h1> */
-  font-family: 'MyCustomFont1' serif;
+  font-size: 34px; /* Размер шрифта для <h1> */
+  font-family: 'MyCustomFont3', serif;
 }
 
 
@@ -215,7 +376,8 @@ button[type="submit"]:hover {
   width: 400px; 
   height: 400px; 
   border: 5px solid #ffffff; 
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: transparent; */
   padding: 20px; 
   border-radius: 10px; 
   margin: 20px auto; /* Отступ вокруг секции */
@@ -239,19 +401,20 @@ button[type="submit"]:hover {
 
 #timer .time span.number {
   display: block;
-  font-size: 34px; /* Размер шрифта для чисел */
+  font-size: 36px; 
   margin-bottom: +1px;
+  font-family: 'CormorantInfant', serif;
 }
 
 #timer .time span.text {
   display: block;
-  font-size: 18px; /* Меньший размер шрифта для текста */
-
+  font-size: 18px;
+  font-family: 'CormorantInfant', serif;
 }
 
 
 footer {
-  background-color: #42ebe5; /* Светлый серый цвет фона */
+  background-color: rgba(255, 255, 255, 0.5);
   color: #000000; /* Темно-серый цвет текста */
   text-align: center; /* Выравнивание текста по центру */
   padding: 20px 0; /* Вертикальные отступы сверху и снизу */
@@ -265,26 +428,20 @@ footer p {
 
 }
 
-
-
 .hidden {
   opacity: 0;
   visibility: hidden;
 }
-
-
 .visible {
   opacity: 1;
   transition: opacity 5s ease-in-out;
 }
-
 .visible-left {
   opacity: 1;
   animation: slideInFromLeft 2s forwards;
   /* transition: opacity 5s ease-out; */
 
 }
-
 .visible-far {
   opacity: 1;
   animation: slideInFromFar 2s forwards;
@@ -304,10 +461,6 @@ footer p {
 .name {
   margin: 0;
 }
-
-
-
-
 
 nav ul {
     list-style-type: none;
@@ -472,14 +625,15 @@ nav ul li {
     padding-top: 1px !important;
     padding-bottom: 1px !important;
   }
-  /* footer p {
+  footer p {
     margin: 20px 50px; 
     padding-top: 10px; 
     padding-bottom: 10px;
   }
   footer {
-    width: 160%; 
-  } */
+    margin: 20px 120px; /* Reduce margin */
+    width: 100%; 
+  }
 
 
   .gallery-images img {
@@ -508,5 +662,21 @@ nav ul li {
 
   input[type="text"], input[type="email"], input[type="tel"], select, textarea, button[type="submit"] {
       padding: 12px; /* Increase padding for easier tapping */
+  }
+}
+
+@media screen and (max-width: 379px) {
+  #first h2 {
+    width: 100%;
+    font-size: 80px; 
+    font-family: 'saint_amour', sans-serif;
+  }
+}
+
+@media screen and (max-width: 230px) {
+  #first h2 {
+    width: 100%;
+    font-size: 40px; 
+    font-family: 'saint_amour', sans-serif;
   }
 }
