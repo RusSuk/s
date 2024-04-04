@@ -39,13 +39,17 @@ function doPost(e) {
     rowData.push(e.parameter.food);
     rowData.push(e.parameter.message);
     sheet.appendRow(rowData);
+    console.log("e.parameter.alcohol:", e.parameter.alcohol); 
+
     return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
   }
 
   function submitForm(event) {
     event.preventDefault(); // Предотвращаем отправку формы по умолчанию
     var formData = new FormData(document.getElementById("guestForm"));
-    fetch('https://script.google.com/macros/s/AKfycbx3gwTI7RYjUDUfI_qYl4sSQ-qK6p2oZpLMqsn0mwVntI6p_ccbmV6G1mKhH26S5HroLw/exec', { 
+    // fetch('https://script.google.com/macros/s/AKfycbx3gwTI7RYjUDUfI_qYl4sSQ-qK6p2oZpLMqsn0mwVntI6p_ccbmV6G1mKhH26S5HroLw/exec', { 
+    fetch('https://script.google.com/macros/s/AKfycbzMVE4JX1h6zfYyqxeOqXJMwTPsi20tUb-dz97fDOSBSs7TvNCF_F5KKE-KEyRYCdT51A/exec', { 
+    
     
     method: 'POST',
       body: formData
@@ -83,8 +87,6 @@ function doPost(e) {
                   }, 2000); 
                 } 
                 else if (entry.target.id === 'Ангелина') {
-                  console.log("Сюда код зашел! Появление элемента:", entry.target.id); 
-
                   setTimeout(function() {
                     entry.target.classList.remove("hidden");
                     entry.target.classList.add("visible-left");
@@ -92,30 +94,24 @@ function doPost(e) {
                 }
 
                 else if (entry.target.id === 'Руслан') {
-                    console.log("Сюда код зашел! Появление элемента:", entry.target.id); // Вывод сообщения в консоль
-  
+                    setTimeout(function() {
+                      entry.target.classList.remove("hidden");
+                      entry.target.classList.add("visible-right");
+                    }, 4000); 
+                }
+
+                else if (entry.target.id === 'Диана') {
+                  setTimeout(function() {
+                    entry.target.classList.remove("hidden");
+                    entry.target.classList.add("visible-left");
+                  }, 6000); 
+                }
+
+                else if (entry.target.id === 'Михаил') {
                     setTimeout(function() {
                       entry.target.classList.remove("hidden");
                       entry.target.classList.add("visible-right");
                     }, 6000); 
-                }
-
-                else if (entry.target.id === 'Диана') {
-                  console.log("Сюда код зашел! Появление элемента:", entry.target.id); 
-
-                  setTimeout(function() {
-                    entry.target.classList.remove("hidden");
-                    entry.target.classList.add("visible-left");
-                  }, 8000); 
-                }
-
-                else if (entry.target.id === 'Михаил') {
-                    console.log("Сюда код зашел! Появление элемента:", entry.target.id); // Вывод сообщения в консоль
-  
-                    setTimeout(function() {
-                      entry.target.classList.remove("hidden");
-                      entry.target.classList.add("visible-right");
-                    }, 10000); 
                 }
                 
                 else if (entry.target.id === 'logo2') {
