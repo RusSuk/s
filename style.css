@@ -173,9 +173,9 @@ body {
     font-family: 'Noto_SemiBold', sans-serif;
 }
 
-#first {
+#first, #second  {
     width: 700px; 
-    height: 650px; 
+    height: 500px; 
     /* border: 5px solid #ffffff;  */
     background-color: transparent;
     padding: 20px; 
@@ -190,7 +190,7 @@ body {
   font-family: 'MyCustomFont1';
 }
 
-#first h2 {
+#second h2 {
   font-size: 120px; /* Размер шрифта для <h2> */
   font-family: 'saint_amour', sans-serif; /* Шрифт для <h2> */
 }
@@ -429,6 +429,11 @@ footer p {
   font-size: 32px; /* Размер шрифта */
   font-family: 'MyCustomFont1', serif;
 
+}
+
+.hidden_guest {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hidden {

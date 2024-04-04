@@ -17,7 +17,18 @@
             <header id="logo1" class="hidden">
                 <img src="LOGO/photo.png" alt="Логотип" width="350" height="300">
             </header>
+        </div>
+    </section>
+<!-- 
+    <div id="rec1" 
+        class="spacer" 
+        style="padding-top:50px;padding-bottom:15px; " 
+        data-record-type="113">
+        <div style="height:2px;"></div>
+    </div> -->
 
+    <section id="second"> 
+        <div  class="hidden">
             <header id="name2" class="hidden">
                 <h2 class="names">
                     <header id="Ангелина" class="hidden">Ангелина&nbsp;</header>
@@ -44,39 +55,12 @@
 
     <div id="rec1" 
         class="spacer" 
-        style="padding-top:450px;padding-bottom:15px; " 
+        style="padding-top:300px;padding-bottom:15px; " 
         data-record-type="113">
         <div style="height:2px;"></div>
     </div>
 
-    <section id="gallery" class="hidden">
-        <h2>Галерея</h2>
-        <div class="gallery-images">
-            <!-- <figcaption>Надпись над фотографией 1</figcaption> -->
-            <img src="PHOTO/1.jpg" alt="фотка 1">
-        </div>
-    </section>
-
-    <div id="rec3" 
-        class="spacer" 
-        style="padding-top:150px;padding-bottom:15px; " 
-        data-record-type="113">
-        <div style="height:2px;"></div>
-    </div>
-
-    <section id="gallery" class="hidden">
-        <div class="gallery-images">
-            <img src="PHOTO/2.jpg" alt="Описание фотка 2">
-        </div>
-    </section>
-
-    <section id="gallery" class="hidden">
-        <div class="gallery-images">
-            <img src="PHOTO/photo_3.jpg" alt="фотка 3">
-        </div>    
-    </section>
-
-    <section id="guest-form" class="hidden">
+    <section id="guest-form" class="hidden_guest">
         <h1>Анкета гостя</h1>
         <form id="guestForm" onsubmit="submitForm(event)">
             <div class="form-group">
@@ -131,16 +115,6 @@
                 </fieldset>
             </div>
 
-            <!-- <div class="form-group">
-                <label1 for="email">Email:</label1>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label1 for="phone">Телефон:</label1>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-             -->
             <div class="form-group">
                 <label1 for="message">Сообщение:</label1>
                 <textarea id="message" name="message"></textarea>
@@ -152,28 +126,6 @@
         </form>
     </section>
 
-
-    <!-- <script>
-        function submitForm(event) {
-            event.preventDefault(); // Предотвращаем отправку формы по умолчанию
-            var formData = new FormData(document.getElementById("guestForm"));
-            fetch('https://script.google.com/macros/s/AKfycbxWhlT4-xKwsURTHFykfgWKv7FU49Pf0PNYUBMn899-3aUBxJNIhm5ObFE1tECByNBK/exec', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                alert('Данные успешно отправлены в таблицу Google Sheets!');
-                document.getElementById("guestForm").reset(); // Очищаем форму после отправки
-            })
-            .catch(error => {
-                console.error('There has been a problem with your fetch operation:', error);
-                alert('Произошла ошибка при отправке данных.');
-            });
-        }
-    </script> -->
 </body>
 
 <section id="map-yandex" class="hidden">
@@ -200,6 +152,32 @@
     </div>
 </section>
 
+<section id="gallery" class="hidden">
+    <h2>Галерея</h2>
+    <div class="gallery-images">
+        <!-- <figcaption>Надпись над фотографией 1</figcaption> -->
+        <img src="PHOTO/1.jpg" alt="фотка 1">
+    </div>
+</section>
+
+<div id="rec3" 
+    class="spacer" 
+    style="padding-top:150px;padding-bottom:15px; " 
+    data-record-type="113">
+    <div style="height:2px;"></div>
+</div>
+
+<section id="gallery" class="hidden">
+    <div class="gallery-images">
+        <img src="PHOTO/2.jpg" alt="Описание фотка 2">
+    </div>
+</section>
+
+<section id="gallery" class="hidden">
+    <div class="gallery-images">
+        <img src="PHOTO/photo_3.jpg" alt="фотка 3">
+    </div>    
+</section>
 <div id="rec2" 
     class="spacer" 
     style="padding-top:15px;padding-bottom:15px; " 

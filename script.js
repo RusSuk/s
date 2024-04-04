@@ -87,31 +87,35 @@ function doPost(e) {
                   }, 2000); 
                 } 
                 else if (entry.target.id === 'Ангелина') {
+                  console.log("Сюда код зашел! Появление элемента:", entry.target.id); // Вывод сообщения в консоль
+
                   setTimeout(function() {
                     entry.target.classList.remove("hidden");
                     entry.target.classList.add("visible-left");
-                  }, 4000); 
+                  }, 5000); 
                 }
 
                 else if (entry.target.id === 'Руслан') {
                     setTimeout(function() {
                       entry.target.classList.remove("hidden");
                       entry.target.classList.add("visible-right");
-                    }, 4000); 
+                    }, 5000); 
                 }
 
                 else if (entry.target.id === 'Диана') {
+                  console.log("Сюда код зашел! Появление элемента:", entry.target.id); // Вывод сообщения в консоль
+
                   setTimeout(function() {
                     entry.target.classList.remove("hidden");
                     entry.target.classList.add("visible-left");
-                  }, 6000); 
+                  }, 8000); 
                 }
 
                 else if (entry.target.id === 'Михаил') {
                     setTimeout(function() {
                       entry.target.classList.remove("hidden");
                       entry.target.classList.add("visible-right");
-                    }, 6000); 
+                    }, 8000); 
                 }
                 
                 else if (entry.target.id === 'logo2') {
@@ -134,13 +138,34 @@ function doPost(e) {
         });
     }, {
         rootMargin: "300px",
-        threshold: 0.01 // Элемент должен быть виден на 10% прежде чем активировать обработчик
+        threshold: 0.1 // Элемент должен быть виден на 10% прежде чем активировать обработчик
     });
 
     // Добавляем все элементы с классом 'hidden' в наблюдение
     document.querySelectorAll('.hidden').forEach((el) => {
         observer.observe(el);
     });
+    
+    // Специфический наблюдатель для 'guest-form'
+    const guestFormObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              console.log("guest-form появился на экране");
+              entry.target.classList.remove("hidden_guest");
+              entry.target.classList.add("visible");
+              guestFormObserver.unobserve(entry.target);
+          }
+      });
+  }, {
+      rootMargin: "200px",
+      threshold: 0.1
+  });
+
+  // Применяем специфический наблюдатель к 'guest-form'
+  const guestForm = document.querySelector('#guest-form');
+  if (guestForm) {
+      guestFormObserver.observe(guestForm);
+  }
 });
 
 window.addEventListener('scroll', function() {
