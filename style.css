@@ -175,7 +175,7 @@ body {
 
 #gallery, #guest-form, #map-yandex, #countdown, #footer {
   width: 400px;
-  margin: 20px auto 20px 135px; /* Отступы: сверху, справа, снизу, слева */
+  margin: 20px auto; /* Отступы: сверху, справа, снизу, слева */
 
 }
 
