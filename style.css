@@ -173,8 +173,8 @@ body {
     font-family: 'Noto_SemiBold', sans-serif;
 }
 
-#gallery, #guest-form, #map-yandex, #countdown, #dear_friends {
-  width: 400px;
+#gallery, #guest-form, #map-yandex, #countdown, #dear_friends, #timetable, #dress {
+  width: 600px;
   margin: 20px auto; /* Отступы: сверху, справа, снизу, слева */
 
 }
@@ -243,6 +243,17 @@ body {
   border-radius: 10px; 
   opacity: 1;                
 }
+
+
+#timetable, #dress {
+  height: 650px; 
+  border: 5px solid #ffffff; 
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px; 
+  border-radius: 10px; 
+  opacity: 1;                
+}
+
 
 hr {
   width: 50%; /* Задаем ширину линии */
@@ -593,13 +604,35 @@ nav ul li {
     visibility: visible;
 }
 
-#dear_friends.hidden {
+#timetable.hidden {
   visibility: hidden;
   opacity: 0;
   transform: translateY(100%);
 }
 
 #dear_friends.visible {
+  animation: slideInFromFar 2s forwards;
+  visibility: visible;
+}
+
+#timetable.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+#timetable.visible {
+  animation: slideInFromLeft 2s forwards;
+  visibility: visible;
+}
+
+#dress.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+#dress.visible {
   animation: slideInFromFar 2s forwards;
   visibility: visible;
 }
@@ -637,7 +670,7 @@ nav ul li {
 }
 
 
-#gallery, #guest-form, #map-yandex, #dear_friends {
+#gallery, #guest-form, #map-yandex, #dear_friends,  #timetable, #dress {
   width: 400px; /* Ширина блоков */
   margin: 20px auto 20px 135px; /* Отступы: сверху, справа, снизу, слева */
 }
@@ -689,7 +722,7 @@ nav ul li {
     font-size: 80px; 
     font-family: 'saint_amour', sans-serif;
   }
-  #gallery, #guest-form, #map-yandex, #countdown, #dear_friends {
+  #gallery, #guest-form, #map-yandex, #countdown, #dear_friends,  #timetable, #dress {
     width: 320px; /* Ширина блоков */
     margin: 20px auto 20px 150px; /* Отступы: сверху, справа, снизу, слева */
   }
