@@ -245,8 +245,17 @@ body {
 }
 
 
-#timetable, #dress {
+#timetable {
   height: 650px; 
+  border: 5px solid #ffffff; 
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px; 
+  border-radius: 10px; 
+  opacity: 1;                
+}
+
+#dress {
+  height: 550px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -322,7 +331,7 @@ hr {
 }
 
 #guest-form {
-  height: 1650px; 
+  height: 1550px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -664,7 +673,7 @@ nav ul li {
 @media screen and (max-width: 600px) {
   body {
     text-align: center;
-    background-image: url('FON/2.webp'); /* Путь к изображению фона */
+    background-image: url('FON/27.png'); /* Путь к изображению фона */
     background-size: cover; /* Масштабирование фонового изображения */
     background-position: center; /* Положение фонового изображения */
 }
@@ -712,7 +721,7 @@ nav ul li {
 @media screen and (max-width: 379px) {
   body {
     text-align: center;
-    background-image: url('FON/1.webp'); /* Путь к изображению фона */
+    background-image: url('FON/27.png'); /* Путь к изображению фона */
     background-size: cover; /* Масштабирование фонового изображения */
     background-position: center; /* Положение фонового изображения */
     background-attachment: fixed;
