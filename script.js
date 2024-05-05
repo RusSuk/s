@@ -92,14 +92,14 @@ function doPost(e) {
                   setTimeout(function() {
                     entry.target.classList.remove("hidden");
                     entry.target.classList.add("visible-left");
-                  }, 5000); 
+                  }, 4000); 
                 }
 
                 else if (entry.target.id === 'Руслан') {
                     setTimeout(function() {
                       entry.target.classList.remove("hidden");
                       entry.target.classList.add("visible-right");
-                    }, 5000); 
+                    }, 4000); 
                 }
 
                 else if (entry.target.id === 'Диана') {
@@ -108,14 +108,14 @@ function doPost(e) {
                   setTimeout(function() {
                     entry.target.classList.remove("hidden");
                     entry.target.classList.add("visible-left");
-                  }, 8000); 
+                  }, 6000); 
                 }
 
                 else if (entry.target.id === 'Михаил') {
                     setTimeout(function() {
                       entry.target.classList.remove("hidden");
                       entry.target.classList.add("visible-right");
-                    }, 8000); 
+                    }, 6000); 
                 }
                 
                 else if (entry.target.id === 'logo2') {

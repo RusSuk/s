@@ -188,19 +188,26 @@ body {
     margin: 20px auto; /* Отступ вокруг секции */
     opacity: 1;                
 }
-
-#first h1 {
-  font-size: 50px; /* Размер шрифта для <h1> */
-  font-family: 'Noto_Bold';
+#second  {
+  margin-top: -340px;               
+}
+#second h1 {
+  font-size: 30px; /* Размер шрифта для <h2> */
+  font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
 }
 
 #second h2 {
-  font-size: 120px; /* Размер шрифта для <h2> */
-  font-family: 'saint_amour', sans-serif; /* Шрифт для <h2> */
+  font-size: 30px; /* Размер шрифта для <h2> */
+  font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
+}
+
+
+#name1 {
+  margin-left: -83px; /* Задаем отрицательный отступ слева */
 }
 
 #logo2 {
-  margin-top: 150px;
+  margin-top: 20px;
   position: relative; /* Делает header позиционированным контейнером для абсолютно позиционированных псевдоэлементов */
   display: flex; /* Используется для центрирования изображения по горизонтали */
   justify-content: center; /* Центрирует содержимое header по горизонтали */
@@ -251,13 +258,16 @@ hr {
 }
 
 #logo4 {
+  margin-top: 20px; 
   position: absolute;
-  left: calc(8%);
+  left: calc(15%);
 }
 
 #logo5 {
+
+  margin-top: 23px; 
   position: absolute;
-  right: calc(16%);
+  right: calc(15%);
 }
 
 #gallery {
@@ -363,7 +373,7 @@ fieldset label {
 
 button[type="submit"] {
   padding: 10px 20px; /* Добавляет пространство внутри кнопки */
-  background-color: #4CAF50; /* Цвет фона кнопки */
+  background-color: #72624F; /* Цвет фона кнопки */
   color: white; /* Цвет текста кнопки */
   border: none; /* Убирает границу кнопки */
   border-radius: 4px; /* Скругляет углы кнопки */
@@ -371,7 +381,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049; /* Цвет фона кнопки при наведении */
+  background-color: #72624F; /* Цвет фона кнопки при наведении */
 }
 
 #map-yandex {
@@ -399,41 +409,30 @@ button[type="submit"]:hover {
 }
 
 
-#countdown {
-  height: 400px; 
-  border: 5px solid #ffffff; 
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 20px; 
-  border-radius: 10px; 
-  opacity: 1;                
-}
-
-
-
-
 #timer .time {
   display: inline-flex; /* Используется для центрирования содержимого внутри и размещения в строку */
   flex-direction: column; /* Организует содержимое (числа и текст) в столбик */
   justify-content: center; /* Центрирует содержимое по вертикали */
   align-items: center; /* Центрирует содержимое по горизонтали */
-  width: 100px; /* Задаёт ширину кружка */
-  height: 100px; /* Задаёт высоту кружка */
+  width: 60px; /* Задаёт ширину кружка */
+  height: 60px; /* Задаёт высоту кружка */
   margin: 10px; /* Добавляет немного пространства вокруг кружков */
   border-radius: 50%; /* Делает края кружка круглыми */
-  border: 6px solid rgba(40, 42, 100, 0.5);
+  border: 3px solid #72624F;
+
   background-color: transparent; /* Делает фон кружка прозрачным */
 }
 
 #timer .time span.number {
   display: block;
-  font-size: 36px; 
+  font-size: 24px; 
   margin-bottom: +1px;
   font-family: 'CormorantInfant', serif;
 }
 
 #timer .time span.text {
   display: block;
-  font-size: 18px;
+  font-size: 12px;
   font-family: 'CormorantInfant', serif;
 }
 
@@ -638,7 +637,7 @@ nav ul li {
 }
 
 
-#gallery, #guest-form, #map-yandex, #countdown, #dear_friends {
+#gallery, #guest-form, #map-yandex, #dear_friends {
   width: 400px; /* Ширина блоков */
   margin: 20px auto 20px 135px; /* Отступы: сверху, справа, снизу, слева */
 }
