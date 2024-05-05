@@ -597,8 +597,9 @@ nav ul li {
     background-image: url('FON/2.webp'); /* Путь к изображению фона */
     background-size: cover; /* Масштабирование фонового изображения */
     background-position: center; /* Положение фонового изображения */
-    background-attachment: fixed;
 }
+
+
 #gallery, #guest-form, #map-yandex, #countdown {
   width: 400px; /* Ширина блоков */
   margin: 20px auto 20px 135px; /* Отступы: сверху, справа, снизу, слева */
