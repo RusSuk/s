@@ -191,8 +191,7 @@ body {
 
 #gallery, #guest-form, #map-yandex, #countdown, #dear_friends, #timetable, #dress {
   width: 600px;
-  margin: 20px auto; /* Отступы: сверху, справа, снизу, слева */
-
+  margin: auto auto; /* Отступы: сверху, справа, снизу, слева */
 }
 
 #first, #second  {
@@ -653,16 +652,6 @@ nav ul li {
   }
 }
 
-@keyframes zoomIn {
-  from {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 
 @keyframes rotateIn {
   from {
@@ -755,106 +744,19 @@ nav ul li {
     visibility: visible;
 }
 
-@media (min-width: 1024px) { /* Примерно для ноутбуков и выше */
-  body {
-      margin: 0 auto;
-  }
-}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 8in) {
   body {
-      margin: 0 auto; /* Центрирование содержимого */
+      margin: auto auto; /* Центрирование содержимого */
+  }
+
+  #gallery, #guest-form, #map-yandex, #countdown, #dear_friends, #timetable, #dress {
+    margin: auto 50px auto 50px; /* Отступы: сверху, справа, снизу, слева */
   }
   .photo-container1,
   .photo-container2 {
       display: none;
     }
-  
-}
 
-
-@media screen and (max-width: 600px) {
-  body {
-    text-align: center;
-    margin: 0 auto;
-    background-image: url('FON/27.png'); /* Путь к изображению фона */
-    background-size: cover; /* Масштабирование фонового изображения */
-    background-position: center; /* Положение фонового изображения */
-}
-  .photo-container1,
-  .photo-container2 {
-      display: none;
-    }
-
-
-#gallery, #guest-form, #map-yandex, #dear_friends,  #timetable, #dress {
-  width: 400px; /* Ширина блоков */
-  margin: 20px auto 20px 135px; /* Отступы: сверху, справа, снизу, слева */
-}
-#gallery {
-  width: 400px; /* Ширина блоков */
-  margin: 20px auto 20px 250px; /* Отступы: сверху, справа, снизу, слева */
-}
-
-#logo2::before,
-#logo2::after {
-  display: none; /
-}
-
-
-  #timer .time {
-      width: 80px; /* Adjust for smaller screens */
-      height: 80px; /* Maintain aspect ratio */
-  }
-
-  #timer .time span.number {
-      font-size: 24px; /* Adjust font size for readability */
-  }
-
-  #timer .time span.text {
-      font-size: 18px;
-
-  }
-
-  nav ul li {
-      display: block; /* Stack nav items vertically */
-      margin: 10px 0; /* Add space between items */
-  }
-
-  input[type="text"], input[type="email"], input[type="tel"], select, textarea, button[type="submit"] {
-      padding: 12px; /* Increase padding for easier tapping */
-  }
-}
-
-@media screen and (max-width: 379px) {
-  body {
-    text-align: center;
-    margin: 0 auto;
-    background-image: url('FON/27.png'); /* Путь к изображению фона */
-    background-size: cover; /* Масштабирование фонового изображения */
-    background-position: center; /* Положение фонового изображения */
-    background-attachment: fixed;
-}
-  .photo-container1,
-  .photo-container2 {
-      display: none;
-    }
-  
-    #first h2 {
-    width: 100%;
-    font-size: 80px; 
-    font-family: 'saint_amour', sans-serif;
-  }
-  #gallery, #guest-form, #map-yandex, #countdown, #dear_friends,  #timetable, #dress {
-    width: 320px; /* Ширина блоков */
-    margin: 20px auto 20px 150px; /* Отступы: сверху, справа, снизу, слева */
-  }
-  
-  #logo2::before,
-  #logo2::after {
-    display: none; /
-  }
-  #guest-form {
-    height: 1750px; 
-  }
+   
 }
