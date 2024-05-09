@@ -1,11 +1,27 @@
 @font-face {
   font-family: 'MyCustomFont1';
   src: 
+      url('FONT/Felidae.ttf') format('Felidae');
+}
+
+@font-face {
+  font-family: 'MyCustomFont1';
+  src: 
       url('FONT/antarctic.ttf') format('truetype');
        
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Larisa';
+  src: 
+      url('FONT/Larisa\ script.ttf') format('truetype');
+       
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'MyCustomFont2';
   src: 
@@ -192,7 +208,7 @@ body {
   margin-top: -340px;               
 }
 #second h1 {
-  font-size: 30px; /* Размер шрифта для <h2> */
+  font-size: 40px; /* Размер шрифта для <h2> */
   font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
 }
 
@@ -267,9 +283,6 @@ body {
 
 
 
-
-
-
 #name1 {
   margin-left: -83px; /* Задаем отрицательный отступ слева */
 }
@@ -304,14 +317,40 @@ body {
 
 
 #dear_friends {
-  height: 650px; 
+  height: 850px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
   border-radius: 10px; 
   opacity: 1;                
 }
+#dear_friends h1 {
+  font-size: 30px; 
+  font-family: 'Noto_SemiBold'; 
+  font-weight: bold;
+}
 
+#dear_friends h21 {
+  font-size: 45px; 
+  font-family: 'Larisa'; 
+  color: #72624F; 
+  font-weight: bold;
+  font-style: normal;
+}
+
+#dear_friends h22 {
+  font-size: 30px; 
+  font-family: 'Larisa'; 
+  color: #72624F; 
+  font-weight: lighter;
+}
+
+#dear_friends h3 {
+  font-size: 30px; 
+  font-family: 'Larisa'; 
+  color: #3e3529; 
+  font-weight: lighter;
+}
 
 #timetable {
   height: 650px; 
@@ -357,6 +396,24 @@ hr {
   position: absolute;
   right: calc(15%);
 }
+#logo6, #logo7 {
+  display: inline-block; /* Делаем элементы строчно-блочными, чтобы они выстроились горизонтально */
+  vertical-align: middle; /* Выравниваем по вертикали по центру */
+  
+}
+
+#logo6 {
+  margin-top: 20px; 
+  position: absolute;
+  left: calc(15%);
+}
+
+#logo7 {
+
+  margin-top: 23px; 
+  position: absolute;
+  right: calc(15%);
+}
 
 
 #guest-form {
@@ -371,7 +428,7 @@ hr {
 
 #guest-form h1 {
   font-size: 36px; 
-  font-family: 'Noto_Bold', serif;
+  font-family: 'Noto_SemiBold';
 }
 
 
@@ -383,10 +440,9 @@ hr {
   display: block;
   width: 100%;
   margin: 2px 0px; 
-  /* text-align: left; */
   text-align: center; 
   font-size: 24px;
-  font-family: 'Noto_SemiBold', sans-serif;
+  font-family: 'Noto_SemiBold', 'Noto_SemiBold';
 }
 
 
@@ -402,7 +458,7 @@ textarea {
   border: 1px solid #ccc; /* Устанавливает границу для полей ввода */
   border-radius: 4px; /* Скругляет углы полей ввода */
   font-size: 12px;
-  font-family: 'Noto_SemiBold', sans-serif;
+  font-family: 'Noto_SemiBold';
 }
 fieldset legend {
   margin-bottom: 30px; 
@@ -417,7 +473,7 @@ fieldset label {
   margin: 2px 0px; 
   text-align: left;
   font-size: 18px;
-  font-family: 'Noto_light', sans-serif;
+  font-family: 'Noto_SemiBold', sans-serif;
 }
 
 button[type="submit"] {
@@ -434,7 +490,7 @@ button[type="submit"]:hover {
 }
 
 #map-yandex {
-  height: 600px; 
+  height: 950px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -443,18 +499,18 @@ button[type="submit"]:hover {
 }
 
 #map-yandex h2 {
-  width: 100%; /* Занимает всю доступную ширину */
-  text-align: center; /* Если нужно выровнять текст по центру */
-  margin-bottom: 20px; /* Добавляет отступ снизу для разделения от изображений */
-  font-size: 34px; /* Размер шрифта для <h1> */
-  font-family: serif;
+  font-size: 35px; 
+  font-family: 'Larisa'; 
+  color: #383023; 
+  font-weight: 100;
+  
 }
 
 
 #map-yandex > div {
   width: 320px; /* Ширина карты, как в параметрах URL */
   height: 300px; /* Высота карты, как в параметрах URL */
-  margin: 20px auto; /* Добавляет вертикальные отступы и центрирует карту по горизонтали */
+  margin: 70px auto; /* Добавляет вертикальные отступы и центрирует карту по горизонтали */
 }
 
 
@@ -638,7 +694,7 @@ nav ul li {
 }
   
 #map-yandex.visible {
-    animation: slideInFromLeft 2s forwards;
+    animation: slideInFromFar 2s forwards;
     visibility: visible;
 }
 
@@ -671,7 +727,7 @@ nav ul li {
 }
 
 #dress.visible {
-  animation: slideInFromFar 2s forwards;
+  animation: slideInFromRight 2s forwards;
   visibility: visible;
 }
 
