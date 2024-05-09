@@ -239,6 +239,12 @@ body {
   transform: translateX(-45%);
 }
 
+.photo-container2 {
+  position: relative;
+  transform: translateX(35%);
+}
+
+
 .photo-container1 .photo1 {
   position: absolute;
   top: 20px;
@@ -258,10 +264,6 @@ body {
 }
 
 /* Стили для второго контейнера */
-.photo-container2 {
-  position: relative;
-  transform: translateX(35%);
-}
 
 .photo-container2 .photo1 {
   position: absolute;
@@ -755,26 +757,34 @@ nav ul li {
 
 @media (min-width: 1024px) { /* Примерно для ноутбуков и выше */
   body {
-      width: 1024px;
-      margin: 0 auto; /* Центрирование содержимого */
+      margin: 0 auto;
   }
 }
 
-@media (min-width: 768px) { /* Примерно для планшетов и выше */
+@media screen and (max-width: 768px) {
   body {
-      width: 768px;
       margin: 0 auto; /* Центрирование содержимого */
   }
+  .photo-container1,
+  .photo-container2 {
+      display: none;
+    }
+  
 }
 
 
 @media screen and (max-width: 600px) {
   body {
     text-align: center;
+    margin: 0 auto;
     background-image: url('FON/27.png'); /* Путь к изображению фона */
     background-size: cover; /* Масштабирование фонового изображения */
     background-position: center; /* Положение фонового изображения */
 }
+  .photo-container1,
+  .photo-container2 {
+      display: none;
+    }
 
 
 #gallery, #guest-form, #map-yandex, #dear_friends,  #timetable, #dress {
@@ -819,12 +829,18 @@ nav ul li {
 @media screen and (max-width: 379px) {
   body {
     text-align: center;
+    margin: 0 auto;
     background-image: url('FON/27.png'); /* Путь к изображению фона */
     background-size: cover; /* Масштабирование фонового изображения */
     background-position: center; /* Положение фонового изображения */
     background-attachment: fixed;
 }
-  #first h2 {
+  .photo-container1,
+  .photo-container2 {
+      display: none;
+    }
+  
+    #first h2 {
     width: 100%;
     font-size: 80px; 
     font-family: 'saint_amour', sans-serif;
