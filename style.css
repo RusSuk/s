@@ -202,6 +202,74 @@ body {
 }
 
 
+.photo-container1 img,
+.photo-container2 img {
+  border: 3px solid rgba(255, 255, 255, 0.5); /* Белая рамка толщиной 5px */
+  border-radius: 10px; /* Закругление углов */
+  transition: transform 1s ease; /* Плавное изменение масштаба на 1 секунду */
+  z-index: 1;
+  transition: opacity 2s ease; 
+}
+
+.photo-container1 img:hover,
+.photo-container2 img:hover {
+  z-index: 2; /* Увеличиваем z-index при наведении курсора на фото */
+}
+
+/* ФОТОГРАФИИ*/
+/* Стили для первого контейнера */
+.photo-container1 {
+  position: relative;
+  transform: translateX(-45%);
+}
+
+.photo-container1 .photo1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.photo-container1 .photo2 {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+}
+
+.photo-container1 .photo3 {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+}
+
+/* Стили для второго контейнера */
+.photo-container2 {
+  position: relative;
+  transform: translateX(35%);
+}
+
+.photo-container2 .photo1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.photo-container2 .photo2 {
+  position: absolute;
+  top: 50px;
+  right: 120px;
+}
+
+.photo-container2 .photo3 {
+  position: absolute;
+  top: 100px;
+  right: 220px;
+}
+
+
+
+
+
+
 #name1 {
   margin-left: -83px; /* Задаем отрицательный отступ слева */
 }
@@ -290,45 +358,6 @@ hr {
   right: calc(15%);
 }
 
-#gallery {
-  height: 400px; 
-  background-color: transparent;
-  border-radius: 10px; 
-}
-
-#gallery h2 {
-  text-align: center; /* Если нужно выровнять текст по центру */
-  margin-bottom: 20px; /* Добавляет отступ снизу для разделения от изображений */
-  font-size: 72px; /* Размер шрифта для <h1> */
-  font-family: 'MyCustomFont2', serif;
-}
-
-#gallery.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
-}
-
-#gallery.visible {
-  animation: rotateIn 3s forwards;
-  visibility: visible;
-}
-
-
-.gallery-images {
-  display: flex; /* Активируем Flexbox для контейнера */
-  justify-content: center; /* Горизонтальное выравнивание по центру */
-  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
-  /* align-items: center; */ /* Вертикальное выравнивание по центру, если у контейнера задана высота */
-}
-
-.gallery-images img {
-  width: 400px; /* Устанавливаем ширину изображений */
-  height: auto; /* Поддерживаем пропорциональное масштабирование */
-  border-radius: 10px; /* Задаем скругление углов */
-  border: 4px solid rgba(40, 42, 100, 0.5);
-
-}
 
 #guest-form {
   height: 1550px; 
@@ -668,6 +697,19 @@ nav ul li {
     visibility: visible;
 }
 
+@media (min-width: 1024px) { /* Примерно для ноутбуков и выше */
+  body {
+      width: 1024px;
+      margin: 0 auto; /* Центрирование содержимого */
+  }
+}
+
+@media (min-width: 768px) { /* Примерно для планшетов и выше */
+  body {
+      width: 768px;
+      margin: 0 auto; /* Центрирование содержимого */
+  }
+}
 
 
 @media screen and (max-width: 600px) {
