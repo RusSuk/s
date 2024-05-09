@@ -189,9 +189,9 @@ body {
     font-family: 'Noto_SemiBold', sans-serif;
 }
 
-#gallery, #guest-form, #map-yandex, #countdown, #dear_friends, #timetable, #dress {
+#guest-form, #map-yandex, #countdown, #dear_friends, #timetable, #dress {
   width: 600px;
-  margin: auto auto; /* Отступы: сверху, справа, снизу, слева */
+  margin: 20px auto; /* Отступы: сверху, справа, снизу, слева */
 }
 
 #first, #second  {
@@ -542,21 +542,6 @@ button[type="submit"]:hover {
   font-family: 'CormorantInfant', serif;
 }
 
-/* 
-footer {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000000; 
-  text-align: center; 
-  padding: 20px 0; 
-  border-top: 3px solid #1538b5;
-}
-
-footer p {
-  font-size: 32px; 
-  font-family: serif;
-
-} */
 
 .hidden_guest {
   opacity: 0;
@@ -751,7 +736,7 @@ nav ul li {
   }
 
   #gallery, #guest-form, #map-yandex, #countdown, #dear_friends, #timetable, #dress {
-    margin: auto 50px auto 50px; /* Отступы: сверху, справа, снизу, слева */
+    margin: 20px 50px auto 50px; /* Отступы: сверху, справа, снизу, слева */
   }
   .photo-container1,
   .photo-container2 {
