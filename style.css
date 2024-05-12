@@ -816,6 +816,12 @@ nav ul li {
     margin: auto auto; /* Центрирование содержимого */
     max-width: 800px; /* Максимальная ширина содержимого */
   }
+
+  #end_section{
+    width: 950px;
+    margin: 0px 0px 0px -100px; /* Отступы: сверху, справа, снизу, слева */
+  }
+
   .photo-container {
     position: relative; /* Относительное позиционирование для контейнера */
   }
@@ -935,7 +941,7 @@ nav ul li {
   #timetable, 
   #dress {
     width: 600px;
-    margin: 20px 50px auto 50px; /* Отступы: сверху, справа, снизу, слева */
+    margin: 20px 50px 0px 80px; /* Отступы: сверху, справа, снизу, слева */
   }
 
   .photo-container,
