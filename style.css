@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'MyCustomFont1';
+  font-family: 'MyCustomFont4';
   src: 
       url('FONT/Felidae.ttf') format('Felidae');
 }
@@ -27,8 +27,9 @@
   src: 
       url('FONT/ekaterina-velikaya-one.ttf') format('truetype');
 
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
+  
 }
 @font-face {
   font-family: 'MyCustomFont3';
@@ -585,6 +586,8 @@ button[type="submit"]:hover {
   font-family: 'MyCustomFont2'; 
   color: #383023; 
   margin-top: -70px;  
+  font-style: normal;
+  font-weight: lighter;
 }
 
 
@@ -592,6 +595,9 @@ button[type="submit"]:hover {
   font-size: 40px; 
   font-family: 'MyCustomFont2'; 
   color: #383023; 
+  font-weight: lighter;
+
+
 }
 
 #timer .time {
