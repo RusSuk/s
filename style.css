@@ -587,13 +587,12 @@ button[type="submit"]:hover {
   margin-top: -70px;  
 }
 
+
 #end_section h2 {
   font-size: 40px; 
   font-family: 'MyCustomFont2'; 
   color: #383023; 
 }
-
-
 
 #timer .time {
   display: inline-flex; /* Используется для центрирования содержимого внутри и размещения в строку */
