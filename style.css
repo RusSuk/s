@@ -301,7 +301,7 @@ body {
 
 .photo-container .photo3 {
   position: absolute;
-  top: 100px;
+  top: 103px;
   right: 500px;
 }
 
@@ -323,16 +323,16 @@ body {
   left: 500px;
 }
 
-.photo-container .photo1{
+.photo-container .photo3,
+.photo-container .photo6{
   width: 180px;
   height: auto;
 }
 
 .photo-container .photo2,
-.photo-container .photo3,
+.photo-container .photo1,
 .photo-container .photo4,
-.photo-container .photo5,
-.photo-container .photo6 {
+.photo-container .photo5 {
   width: 200px; /* Установите требуемую ширину */
   height: auto; /* Позволяет сохранять пропорции изображения */
 }
@@ -656,6 +656,9 @@ button[type="submit"]:hover {
   justify-content: center;
   align-items: center; /* Выравнивает элементы по центру по вертикальной оси */
 }
+.names header {
+  margin-top: -50px; /* Опустить текст на 20 пикселей относительно логотипа */
+}
 
 .name {
   margin: 0;
@@ -808,19 +811,137 @@ nav ul li {
     visibility: visible;
 }
 
-
-@media screen and (max-width: 8in) {
+@media screen and (max-width: 1400px) {
   body {
-      margin: auto auto; /* Центрирование содержимого */
+    margin: auto auto; /* Центрирование содержимого */
+    max-width: 800px; /* Максимальная ширина содержимого */
   }
+  .photo-container {
+    position: relative; /* Относительное позиционирование для контейнера */
+  }
+  
+  .photo-container .photo1 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  
+  .photo-container .photo2 {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+  }
+  
+  .photo-container .photo3 {
+    position: absolute;
+    top: 103px;
+    right: 250px;
+  }
+  
+  .photo-container .photo4 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+  
+  .photo-container .photo5 {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+  }
+  
+  .photo-container .photo6 {
+    position: absolute;
+    top: 100px;
+    left: 250px;
+  }
+  
+  .photo-container .photo3,
+  .photo-container .photo6{
+    width: 120px;
+    height: auto;
+  }
+  
+  .photo-container .photo2,
+  .photo-container .photo1,
+  .photo-container .photo4,
+  .photo-container .photo5 {
+    width: 140px; /* Установите требуемую ширину */
+    height: auto; /* Позволяет сохранять пропорции изображения */
+  }
+  
+}
 
-  #gallery, #guest-form, #map-yandex, #countdown, #dear_friends, #timetable, #dress {
+@media screen and (max-width: 760px) {
+  .photo-container {
+    position: relative; /* Относительное позиционирование для контейнера */
+  }
+  
+  .photo-container .photo1 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+  
+  .photo-container .photo2 {
+    position: absolute;
+    top: 50px;
+    right: 120px;
+  }
+  
+  .photo-container .photo3 {
+    position: absolute;
+    top: 103px;
+    right: 190px;
+  }
+  
+  .photo-container .photo4 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+  
+  .photo-container .photo5 {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+  }
+  
+  .photo-container .photo6 {
+    position: absolute;
+    top: 100px;
+    left: 190px;
+  }
+  
+  .photo-container .photo3,
+  .photo-container .photo6{
+    width: 150px;
+    height: auto;
+  }
+  
+  .photo-container .photo2,
+  .photo-container .photo1,
+  .photo-container .photo4,
+  .photo-container .photo5 {
+    width: 150px; /* Установите требуемую ширину */
+    height: auto; /* Позволяет сохранять пропорции изображения */
+  }
+  
+  #gallery, 
+  #guest-form, 
+  #map-yandex, 
+  #countdown, 
+  #dear_friends, 
+  #timetable, 
+  #dress {
+    width: 600px;
     margin: 20px 50px auto 50px; /* Отступы: сверху, справа, снизу, слева */
   }
-  .photo-container1,
-  .photo-container2 {
-      display: none;
-    }
 
-   
+  .photo-container,
+  #end_section{
+    width: 750px;
+    margin: 20px 50px 0px 0px; /* Отступы: сверху, справа, снизу, слева */
+  }
+  
 }
