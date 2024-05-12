@@ -926,11 +926,17 @@ nav ul li {
     width: 150px; /* Установите требуемую ширину */
     height: auto; /* Позволяет сохранять пропорции изображения */
   }
-  
+
+  #first {
+    margin:  50px 0px 0px 40px; /* Отступы: сверху, справа, снизу, слева */
+  }
+  #second  {
+    margin:  -300px 0px 0px 40px; /* Отступы: сверху, справа, снизу, слева */
+  }
+
   #gallery, 
   #guest-form, 
   #map-yandex, 
-  #countdown, 
   #dear_friends, 
   #timetable, 
   #dress {
@@ -938,10 +944,14 @@ nav ul li {
     margin: 20px 50px 0px 80px; /* Отступы: сверху, справа, снизу, слева */
   }
 
-  .photo-container,
+  
   #end_section{
     width: 750px;
     margin: 20px 50px 0px 0px; /* Отступы: сверху, справа, снизу, слева */
   }
-  
+  .photo-container{
+    width: 750px;
+    margin: 20px 50px 0px 32px; /* Отступы: сверху, справа, снизу, слева */
+
+  }
 }
