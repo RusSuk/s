@@ -218,16 +218,17 @@ body {
 
 
 .photo-container1 img,
-.photo-container2 img {
+.photo-container2 img,
+.photo-container img {
   border: 3px solid rgba(255, 255, 255, 0.5); /* Белая рамка толщиной 5px */
   border-radius: 10px; /* Закругление углов */
-  transition: transform 1s ease; /* Плавное изменение масштаба на 1 секунду */
   z-index: 1;
-  transition: opacity 2s ease; 
+  transition: transform 1s ease, opacity 2s ease;
 }
 
 .photo-container1 img:hover,
-.photo-container2 img:hover {
+.photo-container2 img:hover,
+.photo-container img:hover {
   z-index: 2; /* Увеличиваем z-index при наведении курсора на фото */
 }
 
@@ -282,6 +283,59 @@ body {
   right: 220px;
 }
 
+.photo-container {
+  position: relative; /* Относительное позиционирование для контейнера */
+}
+
+.photo-container .photo1 {
+  position: absolute;
+  top: 20px;
+  right: 200px;
+}
+
+.photo-container .photo2 {
+  position: absolute;
+  top: 50px;
+  right: 350px;
+}
+
+.photo-container .photo3 {
+  position: absolute;
+  top: 100px;
+  right: 500px;
+}
+
+.photo-container .photo4 {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+}
+
+.photo-container .photo5 {
+  position: absolute;
+  top: 50px;
+  left: 350px;
+}
+
+.photo-container .photo6 {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+
+.photo-container .photo1{
+  width: 180px;
+  height: auto;
+}
+
+.photo-container .photo2,
+.photo-container .photo3,
+.photo-container .photo4,
+.photo-container .photo5,
+.photo-container .photo6 {
+  width: 200px; /* Установите требуемую ширину */
+  height: auto; /* Позволяет сохранять пропорции изображения */
+}
 
 
 #name1 {
@@ -491,16 +545,18 @@ button[type="submit"]:hover {
 }
 
 #map-yandex {
-  height: 950px; 
+  height: 750px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
   border-radius: 10px; 
   opacity: 1;                
 }
-
+#map-yandex img[src*="LOGO"] {
+  margin-top: 40px; /* Измените значение на нужное вам */
+}
 #map-yandex h2 {
-  font-size: 35px; 
+  font-size: 30px; 
   font-family: 'Larisa'; 
   color: #383023; 
   font-weight: 100;
@@ -513,6 +569,30 @@ button[type="submit"]:hover {
   height: 300px; /* Высота карты, как в параметрах URL */
   margin: 70px auto; /* Добавляет вертикальные отступы и центрирует карту по горизонтали */
 }
+
+#end_section {
+  width: 100%;
+  height: 200px; 
+  border: 5px solid #ffffff; 
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px; 
+  border-radius: 10px; 
+  opacity: 1;                
+}
+
+#end_section h1 {
+  font-size: 50px; 
+  font-family: 'MyCustomFont2'; 
+  color: #383023; 
+  margin-top: -70px;  
+}
+
+#end_section h2 {
+  font-size: 40px; 
+  font-family: 'MyCustomFont2'; 
+  color: #383023; 
+}
+
 
 
 #timer .time {

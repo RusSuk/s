@@ -181,6 +181,8 @@ window.addEventListener('scroll', function() {
 // Выбираем все фотографии в контейнерах 1 и 2
 const photos1 = document.querySelectorAll('.photo-container1 img');
 const photos2 = document.querySelectorAll('.photo-container2 img');
+const photos3 = document.querySelectorAll('.photo-container img');
+
 
 // Добавляем обработчики событий для каждой фотографии в контейнере 1
 photos1.forEach(photo => {
@@ -208,4 +210,28 @@ photos2.forEach(photo => {
   });
 });
 
+// Добавляем обработчики событий для каждой фотографии в контейнере 3
+photos3.forEach(photo => {
+  photo.addEventListener('mousemove', (e) => {
+    const xPos = (e.clientX - photo.offsetLeft - (photo.offsetWidth / 2)) / 10;
+    const yPos = (e.clientY - photo.offsetTop - (photo.offsetHeight / 2)) / 10;
+    photo.style.transform = `translate(${xPos}px, ${yPos}px) scale(2)`; 
+  });
 
+  photo.addEventListener('mouseleave', () => {
+    photo.style.transform = 'translate(0, 0) scale(1)'; 
+  });
+});
+
+// Добавляем обработчики событий для каждой фотографии в контейнере 4
+photos4.forEach(photo => {
+  photo.addEventListener('mousemove', (e) => {
+    const xPos = (e.clientX - photo.offsetLeft - (photo.offsetWidth / 2)) / 10;
+    const yPos = (e.clientY - photo.offsetTop - (photo.offsetHeight / 2)) / 10;
+    photo.style.transform = `translate(${xPos}px, ${yPos}px) scale(2)`; 
+  });
+
+  photo.addEventListener('mouseleave', () => {
+    photo.style.transform = 'translate(0, 0) scale(1)'; 
+  });
+});
