@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'FrenchKissscript';
+  src: 
+      url('FONT/FrenchKissscript.ttf') format('truetype');
+}
+
+
+@font-face {
   font-family: 'MyCustomFont4';
   src: 
       url('FONT/Felidae.ttf') format('Felidae');
@@ -210,11 +217,15 @@ body {
 #second h1 {
   font-size: 40px; /* Размер шрифта для <h2> */
   font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
+  font-weight: lighter;
+
 }
 
 #second h2 {
   font-size: 30px; /* Размер шрифта для <h2> */
   font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
+  font-weight: lighter;
+
 }
 
 
@@ -586,7 +597,7 @@ button[type="submit"]:hover {
   font-family: 'MyCustomFont2'; 
   color: #383023; 
   margin-top: -70px;  
-  font-style: normal;
+  font-style: normal; 
   font-weight: lighter;
 }
 
@@ -878,7 +889,7 @@ nav ul li {
   
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 760px) {  
   .photo-container {
     position: relative; /* Относительное позиционирование для контейнера */
   }
