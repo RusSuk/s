@@ -633,7 +633,7 @@ button[type="submit"]:hover {
 }
 .visible {
   opacity: 1;
-  transition: opacity 5s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 .visible-left {
   opacity: 1;
@@ -754,12 +754,6 @@ nav ul li {
 #map-yandex.visible {
     animation: slideInFromFar 2s forwards;
     visibility: visible;
-}
-
-#timetable.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
 }
 
 #dear_friends.visible {
