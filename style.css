@@ -820,7 +820,9 @@ nav ul li {
   body {
     margin: auto auto; /* Центрирование содержимого */
     max-width: 800px; /* Максимальная ширина содержимого */
+    background-image: url('FON/27_2.png'); /* Путь к изображению фона */
   }
+
   #guest-form {
     height: 1600px; 
   }
@@ -887,6 +889,9 @@ nav ul li {
 }
 
 @media screen and (max-width: 760px) {  
+  body {
+    background-image: url('FON/27_3.png'); /* Путь к изображению фона */
+  }
 
   #guest-form {
     height: 1650px; 
