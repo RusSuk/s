@@ -481,7 +481,7 @@ hr {
 
 
 #guest-form {
-  height: 1580px; 
+  height: 1500px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -763,7 +763,7 @@ nav ul li {
 } */
   
 #map-yandex.visible {
-    animation: slideInFromFar 2s forwards;
+    animation: slideInFromLeft 2s forwards;
     visibility: visible;
 }
 
@@ -820,6 +820,9 @@ nav ul li {
   body {
     margin: auto auto; /* Центрирование содержимого */
     max-width: 800px; /* Максимальная ширина содержимого */
+  }
+  #guest-form {
+    height: 1550px; 
   }
 
   #end_section{
@@ -884,6 +887,11 @@ nav ul li {
 }
 
 @media screen and (max-width: 760px) {  
+
+  #guest-form {
+    height: 1600px; 
+  }
+
   .photo-container {
     position: relative; /* Относительное позиционирование для контейнера */
   }
