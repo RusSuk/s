@@ -481,7 +481,7 @@ hr {
 
 
 #guest-form {
-  height: 1500px; 
+  height: 1550px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -822,7 +822,7 @@ nav ul li {
     max-width: 800px; /* Максимальная ширина содержимого */
   }
   #guest-form {
-    height: 1550px; 
+    height: 1600px; 
   }
 
   #end_section{
@@ -889,7 +889,7 @@ nav ul li {
 @media screen and (max-width: 760px) {  
 
   #guest-form {
-    height: 1600px; 
+    height: 1650px; 
   }
 
   .photo-container {
