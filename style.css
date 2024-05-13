@@ -209,22 +209,26 @@ body {
     padding: 20px; 
     border-radius: 10px; 
     margin: 20px auto; /* Отступ вокруг секции */
-    opacity: 1;                
+    opacity: 1;    
+    margin-top: 0;            
 }
 #second  {
-  margin-top: -340px;               
+  margin-top: -370px;               
 }
 #second h1 {
   font-size: 3.5em; /* Размер шрифта для <h2> */
   font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
   font-weight: lighter;
+  margin-bottom: -60px;
 
 }
 
 #second h2 {
-  font-size: 3em; /* Размер шрифта для <h2> */
+  font-size: 2.5em; /* Размер шрифта для <h2> */
   font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
   font-weight: lighter;
+  margin-bottom: -40px;
+  margin-top: 50px;
 
 }
 
@@ -351,7 +355,7 @@ body {
 
 
 #name1 {
-  margin-left: -83px; /* Задаем отрицательный отступ слева */
+  margin-left: -90px; /* Задаем отрицательный отступ слева */
 }
 
 #logo2 {
@@ -481,7 +485,7 @@ hr {
 
 
 #guest-form {
-  height: 1550px; 
+  height: 1620px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -586,26 +590,34 @@ button[type="submit"]:hover {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
   border-radius: 10px; 
-  opacity: 1;                
+  opacity: 1;      
 }
 
 #end_section h1 {
-  font-size: 4.5em; 
+  font-size: 4em; 
   font-family: 'MyCustomFont2'; 
   color: #383023; 
-  margin-top: -70px;  
+  margin-top: -10px;  
   font-style: normal; 
   font-weight: lighter;
 }
+#hr1 {
+  margin-bottom: 10px; /* Устанавливаем нижний отступ для первой линии */
+  height: 1px; /* Задаем высоту линии */
+}
 
+#hr2 {
+  margin-top: -50px; /* Устанавливаем верхний отступ для второй линии */
+  height: 1px; /* Задаем высоту линии */
+}
 
 #end_section h2 {
   font-size: 3.5em; 
   font-family: 'MyCustomFont2'; 
   color: #383023; 
   font-weight: lighter;
-
-
+  margin-top: 60px;
+  margin-bottom: -20px;
 }
 
 #timer .time {
@@ -639,8 +651,13 @@ button[type="submit"]:hover {
   justify-content: center;
   align-items: center; /* Выравнивает элементы по центру по вертикальной оси */
 }
+
+#second header {
+  margin-bottom: -20px; /* Устанавливаем нижний отступ между заголовками */
+}
+
 .names header {
-  margin-top: -50px; /* Опустить текст на 20 пикселей относительно логотипа */
+  margin-top: 10px; /* Опустить текст на 20 пикселей относительно логотипа */
 }
 
 .name {
@@ -824,7 +841,7 @@ nav ul li {
   }
 
   #guest-form {
-    height: 1600px; 
+    height: 1670px; 
   }
 
   #end_section{
@@ -894,7 +911,7 @@ nav ul li {
   }
 
   #guest-form {
-    height: 1650px; 
+    height: 1720px; 
   }
 
   .photo-container {
