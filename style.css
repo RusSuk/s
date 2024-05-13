@@ -215,14 +215,14 @@ body {
   margin-top: -340px;               
 }
 #second h1 {
-  font-size: 40px; /* Размер шрифта для <h2> */
+  font-size: 3.5em; /* Размер шрифта для <h2> */
   font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
   font-weight: lighter;
 
 }
 
 #second h2 {
-  font-size: 30px; /* Размер шрифта для <h2> */
+  font-size: 3em; /* Размер шрифта для <h2> */
   font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
   font-weight: lighter;
 
@@ -590,7 +590,7 @@ button[type="submit"]:hover {
 }
 
 #end_section h1 {
-  font-size: 50px; 
+  font-size: 4.5em; 
   font-family: 'MyCustomFont2'; 
   color: #383023; 
   margin-top: -70px;  
@@ -600,7 +600,7 @@ button[type="submit"]:hover {
 
 
 #end_section h2 {
-  font-size: 40px; 
+  font-size: 3.5em; 
   font-family: 'MyCustomFont2'; 
   color: #383023; 
   font-weight: lighter;
