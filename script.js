@@ -92,14 +92,14 @@ function doPost(e) {
                   setTimeout(function() {
                     entry.target.classList.remove("hidden");
                     entry.target.classList.add("visible-left");
-                  }, 4000); 
+                  }, 2000); 
                 }
 
                 else if (entry.target.id === 'Руслан') {
                     setTimeout(function() {
                       entry.target.classList.remove("hidden");
                       entry.target.classList.add("visible-right");
-                    }, 4000); 
+                    }, 2000); 
                 }
 
                 else if (entry.target.id === 'Диана') {
@@ -108,24 +108,24 @@ function doPost(e) {
                   setTimeout(function() {
                     entry.target.classList.remove("hidden");
                     entry.target.classList.add("visible-left");
-                  }, 6000); 
+                  }, 3000); 
                 }
 
                 else if (entry.target.id === 'Михаил') {
                     setTimeout(function() {
                       entry.target.classList.remove("hidden");
                       entry.target.classList.add("visible-right");
-                    }, 6000); 
+                    }, 3000); 
                 }
                 
-                else if (entry.target.id === 'logo2') {
-                  console.log("Сюда код зашел! Появление элемента:", entry.target.id); // Вывод сообщения в консоль
+                // else if (entry.target.id === 'logo2') {
+                //   console.log("Сюда код зашел! Появление элемента:", entry.target.id); // Вывод сообщения в консоль
 
-                  setTimeout(function() {
-                    entry.target.classList.remove("hidden");
-                    entry.target.classList.add("visible-far");
-                  }, 6000); 
-                }
+                //   setTimeout(function() {
+                //     entry.target.classList.remove("hidden");
+                //     entry.target.classList.add("visible-far");
+                //   }, 6000); 
+                // }
                 else{
                   console.log("Сюда код зашел! Появление элемента:", entry.target.id); // Вывод сообщения в консоль
                  

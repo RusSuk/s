@@ -429,7 +429,7 @@ body {
 }
 
 #dress {
-  height: 550px; 
+  height: 600px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -458,7 +458,6 @@ hr {
 }
 
 #logo5 {
-
   margin-top: 23px; 
   position: absolute;
   right: calc(15%);
@@ -466,7 +465,6 @@ hr {
 #logo6, #logo7 {
   display: inline-block; /* Делаем элементы строчно-блочными, чтобы они выстроились горизонтально */
   vertical-align: middle; /* Выравниваем по вертикали по центру */
-  
 }
 
 #logo6 {
@@ -476,7 +474,6 @@ hr {
 }
 
 #logo7 {
-
   margin-top: 23px; 
   position: absolute;
   right: calc(15%);
@@ -621,7 +618,6 @@ button[type="submit"]:hover {
   margin: 10px; /* Добавляет немного пространства вокруг кружков */
   border-radius: 50%; /* Делает края кружка круглыми */
   border: 3px solid #72624F;
-
   background-color: transparent; /* Делает фон кружка прозрачным */
 }
 
@@ -636,36 +632,6 @@ button[type="submit"]:hover {
   display: block;
   font-size: 12px;
   font-family: 'CormorantInfant', serif;
-}
-
-
-.hidden_guest {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-.visible {
-  opacity: 1;
-  transition: opacity 2s ease-in-out;
-}
-.visible-left {
-  opacity: 1;
-  animation: slideInFromLeft 2s forwards;
-  /* transition: opacity 5s ease-out; */
-
-}
-.visible-far {
-  opacity: 1;
-  animation: slideInFromFar 2s forwards;
-}
-
-.visible-right {
-  opacity: 1;
-  animation: slideInFromRight 2s forwards;
 }
 
 .names {
@@ -750,6 +716,34 @@ nav ul li {
 
 
 
+.hidden_guest {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+.visible-left {
+  opacity: 1;
+  animation: slideInFromLeft 2s forwards;
+  /* transition: opacity 5s ease-out; */
+}
+.visible-far {
+  opacity: 1;
+  animation: slideInFromFar 2s forwards;
+}
+
+.visible-right {
+  opacity: 1;
+  animation: slideInFromRight 2s forwards;
+}
+
 
 #guest-form.hidden {
   visibility: hidden;
@@ -762,11 +756,11 @@ nav ul li {
   visibility: visible;
 }
 
-#map-yandex.hidden {
+/* #map-yandex.hidden {
     visibility: hidden;
     opacity: 0;
     transform: translateY(100%);
-}
+} */
   
 #map-yandex.visible {
     animation: slideInFromFar 2s forwards;
@@ -778,22 +772,22 @@ nav ul li {
   visibility: visible;
 }
 
-#timetable.hidden {
+/* #timetable.hidden {
   visibility: hidden;
   opacity: 0;
   transform: translateY(100%);
-}
+} */
 
 #timetable.visible {
   animation: slideInFromLeft 2s forwards;
   visibility: visible;
 }
 
-#dress.hidden {
+/* #dress.hidden {
   visibility: hidden;
   opacity: 0;
   transform: translateY(100%);
-}
+} */
 
 #dress.visible {
   animation: slideInFromRight 2s forwards;
