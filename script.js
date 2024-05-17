@@ -58,7 +58,7 @@ function doPost(e) {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      alert('Ждем вас с нетерпением!');
+      alert('Ваша анкета отправлена. Надеемся увидеть вас на нашей свадьбе!)');
       document.getElementById("guestForm").reset(); // Очищаем форму после отправки
     })
     .catch(error => {
