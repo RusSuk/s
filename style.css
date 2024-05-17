@@ -4,12 +4,37 @@
       url('FONT/FrenchKissscript.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Aventador';
+  src: 
+      url('FONT/Aventador\ script.ttf') format('truetype');
+}
+
 
 @font-face {
   font-family: 'MyCustomFont4';
   src: 
       url('FONT/Felidae.ttf') format('Felidae');
 }
+
+@font-face {
+  font-family: 'Classica2';
+  src: 
+      url('FONT/Classica\ Two.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Classica1';
+  src: 
+      url('FONT/Classica\ One.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Floriselscript';
+  src: 
+      url('FONT/Floriselscript.ttf') format('truetype');
+}
+
 
 @font-face {
   font-family: 'MyCustomFont1';
@@ -216,21 +241,30 @@ body {
   margin-top: -370px;               
 }
 #second h1 {
-  font-size: 3.5em; /* Размер шрифта для <h2> */
-  font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
+  font-size: 5.5em; /* Размер шрифта для <h2> */
+  font-family: 'FrenchKissscript'; 
   font-weight: lighter;
-  margin-bottom: -60px;
+  margin-bottom: -5%;
+  margin-top: 60px;
 
 }
 
 #second h2 {
-  font-size: 2.5em; /* Размер шрифта для <h2> */
-  font-family: 'MyCustomFont2'; /* Шрифт для <h2> */
+  font-size: 4.5em; /* Размер шрифта для <h2> */
+  font-family: 'FrenchKissscript';
   font-weight: lighter;
-  margin-bottom: -40px;
-  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-top: 80px;
 
 }
+
+#name1 {
+  margin-left: -65px; /* Задаем отрицательный отступ слева */
+}
+#name2 {
+  margin-left: 20px; /* Задаем отрицательный отступ слева */
+}
+
 
 
 .photo-container1 img,
@@ -354,9 +388,6 @@ body {
 }
 
 
-#name1 {
-  margin-left: -90px; /* Задаем отрицательный отступ слева */
-}
 
 #logo2 {
   margin-top: 20px;
@@ -585,7 +616,7 @@ button[type="submit"]:hover {
 
 #end_section {
   width: 100%;
-  height: 200px; 
+  height: 250px; 
   border: 5px solid #ffffff; 
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px; 
@@ -594,30 +625,30 @@ button[type="submit"]:hover {
 }
 
 #end_section h1 {
-  font-size: 4em; 
-  font-family: 'MyCustomFont2'; 
+  font-size: 8em; 
+  font-family: 'FrenchKissscript'; 
   color: #383023; 
-  margin-top: -10px;  
+  margin-top: 40px;  
   font-style: normal; 
   font-weight: lighter;
 }
 #hr1 {
   margin-bottom: 10px; /* Устанавливаем нижний отступ для первой линии */
-  height: 1px; /* Задаем высоту линии */
+  height: 2px; /* Задаем высоту линии */
 }
 
 #hr2 {
-  margin-top: -50px; /* Устанавливаем верхний отступ для второй линии */
-  height: 1px; /* Задаем высоту линии */
+  margin-top: -35px; /* Устанавливаем верхний отступ для второй линии */
+  height: 2px; /* Задаем высоту линии */
 }
 
 #end_section h2 {
-  font-size: 3.5em; 
-  font-family: 'MyCustomFont2'; 
+  font-size: 6em; 
+  font-family: 'FrenchKissscript'; 
   color: #383023; 
   font-weight: lighter;
-  margin-top: 60px;
-  margin-bottom: -20px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 #timer .time {
