@@ -58,7 +58,7 @@ function doPost(e) {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      alert('Бро, тебя записали) Хавчик с собой не забудь)');
+      alert('Ждем вас с нетерпением!');
       document.getElementById("guestForm").reset(); // Очищаем форму после отправки
     })
     .catch(error => {
